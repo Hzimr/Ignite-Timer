@@ -2,6 +2,7 @@ import { Button } from "./components/button/button"
 import { Header } from "./components/header/header"
 import { ThemeProvider } from "styled-components"
 import { defaultTheme } from "./styles/themes/defaults"
+import { GlobalStyle } from "./styles/global"
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
         <Button variant="danger"/>
         <h1>Bom dia</h1>
       </div>
+      <GlobalStyle />
     </ThemeProvider>
   )
 }
