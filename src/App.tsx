@@ -1,4 +1,3 @@
-import { Header } from './components/header/header'
 import { ThemeProvider } from 'styled-components'
 import { defaultTheme } from './styles/themes/defaults'
 import { GlobalStyle } from './styles/global'
@@ -10,7 +9,6 @@ export function App() {
     <BrowserRouter>
       <ThemeProvider theme={defaultTheme}>
         <div>
-          <Header />
           <Router />
         </div>
         <GlobalStyle />
