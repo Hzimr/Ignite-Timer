@@ -1,8 +1,7 @@
 import { HeaderContainer } from './stylesHeader'
-
 import logoIgnite from '../../assets/logo-ignite.svg'
-import menuHistory from '../../assets/menuHistory.png'
-import menuTime from '../../assets/menuTime.png'
+import { NavLink } from 'react-router-dom'
+import { Scroll, Timer } from '@phosphor-icons/react'
 
 export function Header() {
   return (
@@ -12,12 +11,12 @@ export function Header() {
         alt="Dois triângulos da cor verde com uma inclinação de 45º graus "
       />
       <nav>
-        <a href="">
-          <img src={menuTime} alt="" />
-        </a>
-        <a href="">
-          <img src={menuHistory} alt="" />
-        </a>
+        <NavLink to="/" title="Timer">
+          <Timer size={24} />
+        </NavLink>
+        <NavLink to="/history" title="Histórico">
+          <Scroll size={24} />
+        </NavLink>
       </nav>
     </HeaderContainer>
   )
