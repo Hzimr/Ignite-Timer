@@ -11,7 +11,7 @@ import {
   StartCountdownButton,
   StopCountdownButton,
   TaskInput,
-} from './stylesHome'
+} from './homeStyles'
 import { useEffect, useState } from 'react'
 import { differenceInSeconds } from 'date-fns'
 
@@ -178,6 +178,7 @@ export function Home() {
           <span>{seconds[0]}</span>
           <span>{seconds[1]}</span>
         </CountdownContainer>
+
         {activeCycle ? (
           <StopCountdownButton onClick={handleInterruptCycle} type="button">
             <HandPalm size={24} /> Interromper
