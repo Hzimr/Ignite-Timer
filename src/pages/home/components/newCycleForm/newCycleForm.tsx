@@ -4,7 +4,7 @@ import {
   TaskInput,
 } from './newCycleFormStyles'
 import { useContext } from 'react'
-import { CyclesContext } from '../../home'
+import { CyclesContext } from '../../../../contexts/cyclesContext'
 import { useFormContext } from 'react-hook-form'
 
 export function NewCycleForm() {
