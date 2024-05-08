@@ -84,3 +84,13 @@ export const Status = styled.span<StatusProps>`
       props.theme[STATUS_COLORS[props.statusColor]]};
   }
 `
+
+export const NoCyclesDiv = styled.div`
+  display: flex;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`
